@@ -1,0 +1,217 @@
+#include <avr/io.h>
+#define F_CPU 16000000UL
+#include <util/delay.h>
+#include <avr/interrupt.h>
+#define DO 261.63
+#define RE 293.66
+#define MI 329.63
+#define FA 349.23
+#define SOL 391.99
+#define LA 440.0
+#define SI 493.88
+#define DOO 523.25
+volatile intstate =0;
+ISR(INT4_vect)
+{
+state++;//ON상태표현
+}
+ISR(INT5_vect)
+{
+state--;//OFF상태표현
+}
+void Doo()//도음계FND표현
+{
+PORTC = 0x5e;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x5c;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void Ree()//레음계FND표현
+{
+PORTC = 0x77;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x79;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void Mii()//미음계FND표현
+{
+PORTC = 0x55;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x30;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void Faa()//파음계FND표현
+{
+PORTC = 0x71;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x77;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void Sol()//솔음계FND표현
+{
+PORTC = 0x6d;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x5c;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x30;
+PORTG = 0x01;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void La()//라음계FND표현
+{
+PORTC = 0x38;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x77;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void Sii()//시음계FND표현
+{
+PORTC = 0x6d;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x30;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+void fndclear()
+{
+PORTC = 0x00;
+PORTG = 0x00;
+DDRG = 0x00;
+}
+int main() {
+DDRC = 0xff;
+DDRD = 0x00;
+DDRE = 0x00;
+EICRB = 0x0a;
+EIMSK = 0x30;
+sei();
+while(1)
+{
+if(state == 1 ) //on버튼
+{
+DDRB = 0x10;
+PORTC = 0x3f;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x37;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+else if(state < 1)//파워on이후fnd정리
+{
+DDRB = 0x00;
+PORTC = 0x3f;
+PORTG = 0x04;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x71;
+PORTG = 0x02;
+DDRG = 0xff;
+_delay_ms(0.033);
+PORTC = 0x71;
+PORTG = 0x01;
+DDRG = 0xff;
+_delay_ms(0.033);
+}
+else //off버튼
+{
+fndclear();
+DDRB = 0x10;
+}
+if((PIND & 0x01)== 0x00)//도음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/DO);
+PORTB = 0x00;
+_delay_ms(500/DO);
+Doo();
+}
+else if((PIND & 0x02)== 0x00)//레음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/RE);
+PORTB = 0x00;
+_delay_ms(500/RE);
+Ree();
+}
+else if((PIND & 0x04)== 0x00)//미음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/MI);
+PORTB = 0x00;
+_delay_ms(500/MI);
+Mii();
+}
+else if((PIND & 0x08)== 0x00)//파음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/FA);
+PORTB = 0x00;
+_delay_ms(500/FA);
+Faa();
+}
+else if((PIND & 0x10)== 0x00)//솔음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/SOL);
+PORTB = 0x00;
+_delay_ms(500/SOL);
+Sol();
+}
+else if((PIND & 0x20)== 0x00)//라음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/LA);
+PORTB = 0x00;
+_delay_ms(500/LA);
+La();
+}
+else if((PIND & 0x40)== 0x00)//시음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/SI);
+PORTB = 0x00;
+_delay_ms(500/SI);
+Sii();
+}
+else if((PIND & 0x80)== 0x00)//도음계표현
+{
+PORTB = 0x10;
+_delay_ms(500/DOO);
+PORTB = 0x00;
+_delay_ms(500/DOO);
+Doo();
+}
+else fndclear();//FND클리어
+}
+}
