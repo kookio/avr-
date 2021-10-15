@@ -1,0 +1,42 @@
+﻿  ExamWorkerThreadDlg.cpp
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(171,50): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(177,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(179,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(181,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(183,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(185,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(187,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(189,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(191,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(193,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(195,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(197,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(199,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(201,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(203,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(205,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(207,18): warning C4244: '초기화 중': 'short'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(135,25): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(219,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(226,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,19): warning C4101: 'c1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,25): warning C4101: 'd1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,61): warning C4101: 'j1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,7): warning C4101: 'a1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,37): warning C4101: 'f1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,49): warning C4101: 'h1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,31): warning C4101: 'e1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,55): warning C4101: 'i1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,43): warning C4101: 'g1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(166,13): warning C4101: 'b1' :참조되지 않은 지역 변수입니다.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(301,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(303,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(305,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(307,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(309,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(311,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(313,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(315,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(317,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\HP\Downloads\ExamWorkerThread (2)\ExamWorkerThread\ExamWorkerThreadDlg.cpp(319,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ExamWorkerThread.vcxproj -> C:\Users\HP\Downloads\ExamWorkerThread (2)\x64\Debug\ExamWorkerThread.exe
